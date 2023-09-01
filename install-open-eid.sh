@@ -148,6 +148,11 @@ case $distro in
 	 	      make_warn "Installing from ubuntu-kinetic repository"
 	 	      add_repository kinetic
 	 	      ;;
+	 trixie)
+	 	      make_warn "Debian $codename is not officially supported"
+	 	      make_warn "Installing from ubuntu-lunar repository"
+	 	      add_repository lunar
+	 	      ;;
         *)
           make_fail "Debian $codename is not officially supported"
           ;;
